@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="../css/pure-release-0.6.0/pure.css">
+	<link rel="stylesheet" href="../css/pure-release-0.6.0/grids.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Understanding ECMA6</h1>
+	<p>For a useful tutorial see <a href="https://www.codementor.io/javascript/tutorial/ecmascript-6-arrow-functions-classes-object-literals">Code Mentor</a></p>
+
+	<h1>Functions and the arrow thing</h1>
+	<h2>Why?</h2>
+	<ul>Was introduced to:
+		<ol>make more sense of this !!!!</ol>
+		<ol>make reading them easier</ol>
+	</ul>
+	<h2>What</h2>
+	<p>Replaces the palaver of using the word function everywhere with nice little arrow functions.  The function keyword is replaced with an arrow =>. Very nice when you are passing a function to another function ie a callback (I think)</p>
+	<p>Compare:</p>
+	<code>
+		var num = [1,2,3]; <br>
+		num.map(function(x) { <br>
+		return X * 2; <br>
+	}) <br>
+	</code>
+	<p>with</p>
+	<code>num.map((x) => x * 2);</code>
+	<p>ES6 has a “thin arrow” and “fat arrow” syntax. You do not actually have to return explicitly. Just the last statement in that function is what gets returned – that last expression.  These two bits of code are achieving the same thing but the second is a much nicer syntax.</p>
+
+	<h2>Need curly brackets when the functions are across lines</h2>
+	<p>When the arrow function is on one line, you do not need the curly braces while mapping the example. If the function is split the arrow for multiple lines, you do need those braces.</p>
+
+
+</body>
+</html>

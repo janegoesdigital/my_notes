@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="../style.css">
+ <link rel="stylesheet" href="../../css/pure-release-0.6.0/pure.css">
+ <link rel="stylesheet" href="../../css/pure-release-0.6.0/grids.css">
+ <!-- <link type="text/css" rel="stylesheet" href="../../css/materialize-css/bin/materialize.css" media="screen,projection" /> -->
+ <title>Node</title>
+</head>
+<div class="container">
+<body>
+	<div class="pure-menu pure-menu-horizontal">
+	    <a href="#" class="pure-menu-heading pure-menu-link">MEAN stack notes</a>
+	    <ul class="pure-menu-list">
+	        <li class="pure-menu-item"><a href="../aboutExpress.html" class="pure-menu-link">About Express</a></li>
+	        <li class="pure-menu-item"><a href="../templating.html" class="pure-menu-link">Templating (handlebars)</a></li>
+	        <li class="pure-menu-item"><a href="../mongo.html" class="pure-menu-link">MongoDB</a></li>
+					<li class="pure-menu-item"><a href="../Node/node.html" class="pure-menu-link">Node</a></li>
+					<li class="pure-menu-item"><a href="../keystone.html" class="pure-menu-link">Keystone</a></li>
+	    </ul>
+	</div>
+
+ <h1>Here we go with node.js </h1>
+
+ <h1>Common commands</h1>
+ <h2>Exit</h2>
+ <div class="snippet">
+  <p>From the command line use .exit + enter OR ctl + c + c</p>
+
+
+<h1>Using node to import content from another file</h1>
+<h2>Importing content synchronously</h2>
+<p>This goes into a JS file. </p>
+<code>var fs = require('fs');
+
+var someText = fs.readFileSync(
+	__dirname + "/test.js",
+	'utf8'
+);
+
+console.log( someText );
+
+console.log("potato");
+
+</code>
+<p>You literally type the "__dirname" - not the actual directory name </p>
+
+<h1>Reading and writing content</h1>
+<p>This will take the content from another file - in this case called someFile.txt - and read it into this file </p>
+<code>var readable = fs.createReadStream(__dirname + "/someFile.txt", {
+		encoding: "utf8",
+		highWaterMark: 1024
+});
+
+readable.on("data", function(chunk){
+	console.log( chunk );
+});
+</code>
+
+</div>
+
+</body>
+</html>
