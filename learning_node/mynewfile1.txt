@@ -1,0 +1,4 @@
+Hello content!
+
+This file was created by the computer!  See the fs command that I put into the demo_read_file.js
+Hello content!Hello content!  Here is some more contentHello content!  Here is some more contentHello content!  Here is some more contentHello content!  Here is some more contentHello content!  Here is some more contentHello content!  Here is some more contentHello content!  Here is some more contentHello content!  Here is some more contentHello content!  Here is some more contentHello content!  Here is some more contentHello content!  Here is some more contentHello content!  Here is some more content
